@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+*::selection{
+    background: black;
+    color: teal;
+}
+html{
+    font-family: 'Arvo', serif;
+}
+header{
+    border: 3px solid black;
+    background: linear-gradient(-45deg,#ffb8b8,#c56cf0,#17c0eb,#7158e2);
+    height: max-content;
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+#background{
+    width: 100%;
+    height: 100vh;
+    background:white;
+
+}
+#name{
+    display: flex;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    justify-content: center;
+    font-family: 'Bowlby One SC';
+}
+@keyframes change {
+    0%{
+        background-position:0 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0 50%;
+    }
+}
+.header-under-text{
+    display: flex;
+    justify-content: center;
+}
+.main-block{
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-block{
+    width: 15%;
+}
+.center-block{
+    width: 70%;
+    color: white;
+}
+.right-block{
+    width: 15%;
+}
+.li-icon{
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.5em;
+    padding: 10px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 30%;
+    transition: .5s;
+}
+header a{
+    color: #ffffff;
+}
+#headerMain {
+    width:100%;
+    height:75px;
+    margin:0 auto;
+    z-index:0;
+}
+#header {
+    width:100%;
+    height:75px;
+    position: fixed;
+    z-index: 9999;
+}
+/*p{*/
+/*    animation-duration: 3s;*/
+/*    animation-name:slidein ;*/
+/*}*/
+/*@keyframes slidein {*/
+/*    from{*/
+/*        margin-left: 100%;*/
+/*        width: 200%;*/
+/*    }*/
+/*    to{*/
+/*        margin-left: 0;*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+img{
+    width: 250px;
+    height: 200px;
+    border: black solid 3px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.gen-block{
+    display: flex;
+    flex-direction: row;
+}
+.text-block{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /*border: black solid 3px;*/
+    height: max-content;
+    color: black;
+}
+p{
+    color:black;
+}
+.study-list{
+    margin-left: 14px;
+}
+.image2{
+    float: right;
+}
+.left-side{
+    width:300px;
+}
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+table thead tr{
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    overflow: hidden;
+}
+table th,
+table td{
+    padding: 12px 15px;
+}
+table tbody tr{
+    border-bottom: 1px solid black;
+}
+table tbody tr:nth-of-type(even){
+    background-color: black;
+}
+table tbody tr:last-of-type{
+    border-bottom: black 3px solid;
+}
+.table-of-kn {
+    display: flex;
+    justify-content: center;
+}
+.active-row{
+    font-weight: bold;
+    color: black;
+}
+.text-center{
+    text-align: center;
+    color: black;
+}
+.left-button{
+    text-align: center;
+    padding-top :5px ;
+}
+.button{
+    border: 3px solid black;
+    background: none;
+    font-family: 'Arvo', serif;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button:hover{
+    background: black;
+    color: white;
+}
+footer{
+    background: black;
+    color: white;
+}
+.footer-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer-text div{
+    margin: 5px;
+}
+.ratings{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    direction: rtl;
+}
+.ratings a{
+    color: #2f3640;
+    font-size: 40px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.ratings a:hover{
+    color:#f5f6fa;
+}
+.b1:hover ~ a{
+    color:#f5f6fa;
+}
+.b2:hover ~ a{
+    color:#f5f6fa;
+}
+.b3:hover ~ a{
+    color:#f5f6fa;
+}
+.b4:hover ~ a{
+    color:#f5f6fa;
+}
+.thank{
+    position: absolute;
+    align-items: center;
+    top: 50%;
+}
+.thank-body{
+    background: black;
+    color: white;
+    font-size: 50px;
+}
+.go-back{
+    color: white;
+}
+.go-back a{
+    color: white;
+}
